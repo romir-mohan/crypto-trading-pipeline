@@ -17,7 +17,7 @@ class DataClient
     const cpr::Url url = "https://api.sandbox.gemini.com/v1/trades/btcusd";
 
   public:
-    virtual nlohmann::json get_data()
+    nlohmann::json get_data()
     {
         cpr::Response r = cpr::Get(url);
 
