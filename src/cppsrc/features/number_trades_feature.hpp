@@ -1,13 +1,13 @@
 #include <tuple>
 #include <vector>
 
-#include "base_feature.hpp"
+#include "/home/runner/work/intern-project/intern-project/src/cppsrc/features/base_feature.hpp"
 
 #pragma once
 
 namespace intproj {
 
-class NTradesFeature : public BaseFeature
+class NumberTradesFeature : public BaseFeature
 {
   public:
     float compute_feature(std::vector<std::tuple<float, float, bool>> data) override
@@ -15,6 +15,5 @@ class NTradesFeature : public BaseFeature
         return data.size();
     }
 };
-
 
 }

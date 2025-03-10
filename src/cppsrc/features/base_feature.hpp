@@ -1,6 +1,8 @@
 #include <tuple>
 #include <vector>
 
+#pragma once
+
 namespace intproj {
 
 class BaseFeature
